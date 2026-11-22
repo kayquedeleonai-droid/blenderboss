@@ -20,3 +20,18 @@ dialog{width:min(960px,96vw);max-height:92dvh;padding:0 26px 24px;background:#14
 .zoom{position:relative;display:block;padding:0;border:0;width:100%;background:#080808;cursor:zoom-in}.zoom span{position:absolute;right:8px;bottom:8px;background:#101010e6;border:1px solid #555;padding:3px 8px;font-size:14px}#zoom-view{width:min(1500px,98vw);padding:0 10px 10px}#zoom-image{display:block;max-width:100%;max-height:78dvh;object-fit:contain;margin:auto}#zoom-close{background:#282828;color:white;border:1px solid #555;padding:6px 12px}
 
 .intro{color:#c4c4c4;margin:.6em 0 1.2em}.scene-download{display:inline-block;border:1px solid #b74145;padding:8px 14px;margin-top:18px;color:#fff}.scene-download:hover{background:#342226}@media(max-width:530px){header{flex-wrap:wrap;gap:8px}nav{gap:12px}.hero-copy{padding-inline:20px}}
+
+.nodes .track{border-top:1px solid var(--edge);margin-top:28px;padding-top:20px}
+.track h3{font:600 clamp(30px,4vw,48px)/1 var(--display);margin:0}
+.track>p{margin:4px 0 16px;color:var(--muted)}
+.node-lesson{background:var(--panel);border:1px solid var(--edge);margin:8px 0}
+.node-lesson summary{cursor:pointer;padding:14px 18px;font-weight:600}
+.node-lesson summary small{color:#ff777a;margin-right:12px}
+.node-lesson[open]{border-left:3px solid var(--red)}
+.lesson-body{max-width:84ch;padding:0 clamp(14px,3vw,40px) 12px}
+.lesson-body li{padding-left:4px;margin-bottom:10px}
+.lesson-body table{width:100%;border-collapse:collapse}
+.lesson-body caption{text-align:left;font-weight:600;margin:12px 0}
+.lesson-body td,.lesson-body th{text-align:left;padding:7px;border-bottom:1px solid var(--edge)}
+
+.node-cover{display:block;width:100%;max-height:380px;object-fit:contain;background:#101010;margin-bottom:20px}.track[id],#nodes{scroll-margin-top:6rem}

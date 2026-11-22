@@ -17,6 +17,7 @@ for pattern, mime in [("assets/*.jpg", "image/jpeg"), ("cenas/*.blend", "applica
     for path in dist.glob(pattern):
         key = path.relative_to(dist).as_posix()
         embedded[key] = data_url(path, mime)
+        page = page.replace(f'href="{key}"', f'href="{embedded[key]}"')
         page = page.replace(f'src="{key}"', f'data-embedded="{key}"')
 page = page.replace('<link rel="stylesheet" href="style.css">', "<style>" + css + "</style>")
 for name in ("app", "curso"):
